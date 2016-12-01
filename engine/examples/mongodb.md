@@ -176,7 +176,7 @@ $ mongo --port 27017 --host 192.168.59.103
 ```
 
 > **Tip:** If you want to run two containers on the same engine, then you will need to map
-the exposed port to two different ports on the host
+the exposed port to two different ports on the host. If you have MongoDB installed locally be careful not to map your port to your local installation. You can check the port your local connection is listening to via the command mongod.
 
 ```bash
 # Start two containers and map the ports
